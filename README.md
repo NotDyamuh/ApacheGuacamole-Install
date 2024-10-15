@@ -1,6 +1,6 @@
 # guac-install
 
-I've maintained this script for quite a few years now with the help of the other contributors and it seems to be getting more and more fragmented as libraries and system OSes diverge in their package management. I do **not** plan on maintaining this beyond perhaps approving other people's PRs and letting people continue to discuss issues, so I won't archive it but I'm also not actively maintaining it 🤷‍♂️
+This script was forked from MysticRyuujin but this is a version that I am planning to maintain and support for long. Credits to him for creating the script and making it, this is just a repo of the same thing but wth a maintained version.
 
 You can also check out this other [Guacamole-Setup](https://github.com/itiligent/Guacamole-Setup) repo which sets up a complete **Virtual Desktop/Jump Server appliance with MFA, Active Directory integration & Nginx SSL reverse proxy** for more inspiration.
 
@@ -24,7 +24,7 @@ Script for installing Guacamole 1.5.5 on Ubuntu 16.04 or newer (with MySQL, or r
 
 Run script, enter MySQL Root Password and Guacamole User password. Guacamole User is used to connect to the Guacamole Database. Be sure to save these!
 
-The script attempts to install `tomcat9` by default (it will fall back on `tomcat8` **if the available version is 8.5.x or newer**, otherwise it will fall back to `tomcat7`). If you want to manually specify a tomcat version there's a commented out line you can modify. Have at it.
+The script works well on Ubuntu 20, 22, and maybe 23 because those have tomcat9 preinstalled which makes installing it much easier.
 
 ## MFA/2FA
 
